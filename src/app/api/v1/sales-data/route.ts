@@ -36,7 +36,7 @@ export async function GET(request: NextRequest) {
       for (let i = 1; i <= monthDays; i++) {
         data.push({
           id: i,
-          date: new Date(year, month, i + 1).toISOString().split("T")[0],
+          date: new Date(year, month, i).toISOString().split("T")[0],
           ...defaultData,
         });
       }
