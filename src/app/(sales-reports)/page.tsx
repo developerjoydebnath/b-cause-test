@@ -32,7 +32,10 @@ export default async function Home({
           <p>{t("Monthly, daily, by day Sales Reports")}</p>
         </div>
 
-        <SelectLanguage sp={sp} />
+        <div className="flex items-center gap-2">
+          <label>Language</label>
+          <SelectLanguage sp={sp} />
+        </div>
       </div>
 
       <div className="flex items-center gap-4">
